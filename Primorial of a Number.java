@@ -2,7 +2,8 @@
 Feladat eredeti helye: https://www.codewars.com/kata/5a99a03e4a6b34bb3c000124
 
 FELADAT LEÍRÁSA:
-Is similar to factorial of a number, In primorial, not all the natural numbers get multiplied, only prime numbers are multiplied to calculate the primorial of a number. It's denoted with P#.
+Is similar to factorial of a number, In primorial, not all the natural numbers get multiplied, only prime numbers are multiplied 
+to calculate the primorial of a number. It's denoted with P#.
 
 Task
 Given a number N , calculate its primorial.

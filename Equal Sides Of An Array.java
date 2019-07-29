@@ -25,7 +25,7 @@ public class Kata {
   public static int findEvenIndex(int[] arr) {
     HashMap<Integer,Integer> map = new HashMap<>();
     
-	// HashMap-ben tárolja, hogy hátulról haladva mennyi az összeg addig az indexig
+    // HashMap-ben tárolja, hogy hátulról haladva mennyi az összeg addig az indexig
     int sumRight = 0;
     map.put(arr.length, 0);
     for (int i = arr.length - 1; i >= 0; i--) {
@@ -33,8 +33,8 @@ public class Kata {
       map.put(i,sumRight);
     }
     
-	// Végigmegy a lehetséges indexeken, számolja a baloldali összeget,
-	// map-ből lekérdezi a jobboldali összeget, összehasonlítja őket
+    // Végigmegy a lehetséges indexeken, számolja a baloldali összeget,
+    // map-ből lekérdezi a jobboldali összeget, összehasonlítja őket
     int sumLeft = 0;
     for (int i = 0; i < arr.length; i++) {
       if (sumLeft == map.get(i + 1)) {
@@ -43,7 +43,7 @@ public class Kata {
       sumLeft += arr[i];
     }
     
-	// Ha nincs index ahol egyenlő a két oldal
+    // Ha nincs index ahol egyenlő a két oldal
     return -1;
   }
 }
